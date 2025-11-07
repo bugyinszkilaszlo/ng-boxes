@@ -1,7 +1,11 @@
 <div class="box-card">
-  <h2>First box</h2>
+  <h2>{{ box().name }}</h2>
   <ul>
-    <li style="background-image: url('https://picsum.photos/400/300')"><div>Item name</div></li>
+    @for(item of box().items; track item.id) {
+    <li [style.background-image]="`url(${item.image})`">
+      <div>{{ item.name }}</div>
+    </li>
+    }
   </ul>
   <div class="buttons">
     <button class="remove-button">Remove</button>

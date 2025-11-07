@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Box } from '../../model/box.type';
 
 @Component({
   selector: 'app-box-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './box-card.css',
 })
 export class BoxCard {
-
+  box = input.required<Box>();
 }

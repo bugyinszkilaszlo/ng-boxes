@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { BoxCard } from './components/box-card/box-card';
+import { Component } from '@angular/core';
+import { BoxList } from './components/box-list/box-list';
 import { NewBox } from './components/new-box/new-box';
 
 @Component({
   selector: 'app-root',
-  imports: [BoxCard, NewBox],
+  imports: [BoxList, NewBox],
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('ng-boxes');
-}
+export class App {}
