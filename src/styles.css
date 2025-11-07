@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'modern-normalize/modern-normalize.css';
+
+:root {
+  --white: #fefefe;
+  --black: #222;
+  --blue: #4760de;
+  --red: #de475e;
+  --green: #47de65;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+  padding: 20px;
+  font-weight: 400;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 2.5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 8px;
+  font-size: 1rem;
+  color: #999;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
